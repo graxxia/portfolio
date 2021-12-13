@@ -1,27 +1,32 @@
-import Head from 'next/head'
+import Image from 'next/image';
+import Donut from '../assets/3D/Donut.png'
+
 
 export default function Home() {
+  console.log(Donut);
   return (
+ 
+  
     <div className="flex flex-col items-center justify-center min-h-screen py-2">
-      <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
-        <link href="/dist/output.css" rel="stylesheet"></link>
-      </Head>
-
-      <main className="flex flex-col items-center justify-center w-full flex-1 px-20 text-center">
-      <button className="btn btn-primary">daisyUI Button</button>
-        <h1 className="text-6xl font-bold">
-          Welcome to{' '}
-          <a className="text-blue-600" href="https://nextjs.org">
-            Next.js!
+      
+        <h1 className="text-3xl text-center pb-4">
+          Welcome to my {' '}
+          <a className="text-yellow-400 font-bold" href="/portfolio/"> 
+            portfolio
           </a>
         </h1>
 
+        <div className="">
+          
+          <Image src={Donut} alt="3d Donut" 
+        quality={100}/>
+           
+            </div>
+
         <p className="mt-3 text-2xl">
-          Get started by editing{' '}
+          Here's some of my work{' '}
           <code className="p-3 font-mono text-lg bg-gray-100 rounded-md">
-            pages/index.js
+            Go
           </code>
         </p>
 
@@ -66,19 +71,11 @@ export default function Home() {
             </p>
           </a>
         </div>
-      </main>
+      
 
-      <footer className="flex items-center justify-center w-full h-24 border-t">
-        <a
-          className="flex items-center justify-center"
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className="h-4 ml-2" />
-        </a>
-      </footer>
+      
     </div>
+    
+   
   )
 }
