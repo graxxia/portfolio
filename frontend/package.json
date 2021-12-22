@@ -5,17 +5,34 @@
     "build": "next build",
     "start": "next start"
   },
+  "eslintignore":["../styles/globals.css"],
   "dependencies": {
+    "@tailwindcss/aspect-ratio": "^0.4.0",
     "@types/react": "^17.0.37",
     "daisyui": "^1.16.2",
+    "dotenv": "^10.0.0",
+    "dotenv-load": "^2.0.0",
+    "framer-motion": "^5.4.5",
     "next": "latest",
+    "next-env": "^1.1.1",
     "react": "^17.0.2",
-    "react-dom": "^17.0.2"
+    "react-dom": "^17.0.2",
+    "swr": "^1.1.1"
   },
   "devDependencies": {
+    "@tailwindcss/forms": "^0.4.0",
+    "@tailwindcss/typography": "^0.5.0",
+    "@types/node": "^16.11.12",
+    "@types/webpack-env": "^1.16.3",
     "autoprefixer": "^10.4.0",
     "postcss": "^8.4.4",
     "tailwindcss": "^3.0.0",
     "typescript": "^4.5.3"
+  },
+  "compilerOptions": {
+    "types": [
+      "node",
+      "webpack-env"
+    ]
   }
 }
