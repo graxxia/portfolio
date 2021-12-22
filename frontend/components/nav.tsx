@@ -12,31 +12,28 @@ function NavMenu() {
             About
           </a>
 
-          
-          
-            <div className="dropdown dropdown-end">
-              <div tabIndex={0} className="btn btn-ghost ">
-                Work
-              </div>
-              
-              <ul
-                tabIndex={1}
-                className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 "
-              >
-                <li>
-                  <a href="/portfolio/" className="btn-ghost  ">
-                    Graphic
-                  </a>
-                </li>
-                <li>
-                  <a href="/portfolio/3D">3D</a>
-                </li>
-                <li>
-                  <a href="/portfolio/pixelart">Pixel Art</a>
-                </li>
-              </ul>
-              
+          <div className="dropdown dropdown-end">
+            <div tabIndex={0} className="btn btn-ghost ">
+              Work
             </div>
+
+            <ul
+              tabIndex={1}
+              className="p-2 shadow menu dropdown-content bg-base-100 rounded-box w-52 "
+            >
+              <li>
+                <a href="/portfolio/" className="btn-ghost  ">
+                  Graphic
+                </a>
+              </li>
+              <li>
+                <a href="/portfolio/3D">3D</a>
+              </li>
+              <li>
+                <a href="/portfolio/pixelart">Pixel Art</a>
+              </li>
+            </ul>
+          </div>
 
           <a href="/contact" className="btn btn-ghost ">
             Contact
