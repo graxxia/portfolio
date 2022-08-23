@@ -17,9 +17,7 @@ class MyDocument extends Document {
 
         <body className="flex flex-col items-center justify-center w-full flex-1 px-8 text-center">
           <div className="flex mt-3 items-center justify-center  py-1">
-            <div className="avatar">
-              <img src="/Heart.gif" />
-            </div>
+            <div className="avatar">{/* <img src="/Heart.gif" /> */}</div>
           </div>
           <LogoName />
           <Nav />

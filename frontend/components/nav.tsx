@@ -3,17 +3,20 @@ import { motion } from "framer-motion";
 function NavMenu() {
   return (
     <div className="navbar mb-2  ">
-      <div className="flex justify-center flex-1 px-2">
+      <div className="flex justify-center  flex-1 px-2">
         <div className="flex items-stretch">
-          <a href="/" className="btn btn-ghost">
+          <a href="/" className="btn btn-ghost font-thin tracking-wider">
             Home
           </a>
-          <a href="/about" className="btn btn-ghost">
+          <a href="/about" className="btn btn-ghost font-thin tracking-wider">
             About
           </a>
 
           <div className="dropdown dropdown-end">
-            <div tabIndex={0} className="btn btn-ghost ">
+            <div
+              tabIndex={0}
+              className="btn btn-ghost font-thin tracking-wider"
+            >
               Work
             </div>
 
@@ -35,7 +38,7 @@ function NavMenu() {
             </ul>
           </div>
 
-          <a href="/contact" className="btn btn-ghost ">
+          <a href="/contact" className="btn btn-ghost font-thin tracking-wider">
             Contact
           </a>
         </div>
