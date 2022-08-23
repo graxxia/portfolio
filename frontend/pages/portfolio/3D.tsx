@@ -1,10 +1,18 @@
 import { motion } from "framer-motion";
 import { importAll } from "../../util/util";
 
-require.context("../../assets/pixelart", false, /\.(png|jpe?g|svg|gif)$/);
+require.context(
+  "../../public/assets/pixelart",
+  false,
+  /\.(png|jpe?g|svg|gif)$/
+);
 
 const images = importAll(
-  require.context("../../assets/pixelart", false, /\.(png|jpe?g|svg|gif)$/)
+  require.context(
+    "../../public/assets/pixelart",
+    false,
+    /\.(png|jpe?g|svg|gif)$/
+  )
 );
 
 function ThreeD() {
