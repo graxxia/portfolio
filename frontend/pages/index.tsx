@@ -1,8 +1,8 @@
 import Image from "next/image";
-import Bonita from "../assets/img/bonita600px.png";
-import Emily from "../assets/img/emily600px.png";
-import Colours from "../assets/img/colours600px.png";
-import Cat from "../assets/img/cat600px.png";
+const Bonita = require("../public/assets/img/bonita600px.png");
+const Emily = require("../public/assets/img/emily600px.png");
+const Colours = require("../public/assets/img/colours600px.png");
+const Cat = require("../public/assets/img/cat600px.png");
 
 export default function Home() {
   return (

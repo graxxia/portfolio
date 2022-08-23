@@ -1,8 +1,8 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
-import Cat1 from "../../assets/illustration/cat_1.png";
-import Cat2 from "../../assets/illustration/cat_2.png";
-import Banner from "../../assets/illustration/banner_bonitocat.png";
+const Cat1 = require("../../public/assets/illustration/cat_1.png");
+const Cat2 = require("../../public/assets/illustration/cat_2.png");
+const Banner = require("../../public/assets/illustration/banner_bonitocat.png");
 
 function Portfolio() {
   return (
