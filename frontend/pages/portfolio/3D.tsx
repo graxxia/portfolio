@@ -3,7 +3,7 @@ import { importAll } from "../../util/util";
 require.context("../../public/assets/3D", false, /\.(png|jpe?g|svg|gif)$/);
 
 const images = importAll(
-  require.context("../../public/assets/3d", false, /\.(png|jpe?g|svg|gif)$/)
+  require.context("../../public/assets/3D", false, /\.(png|jpe?g|svg|gif)$/)
 );
 
 function ThreeD() {
