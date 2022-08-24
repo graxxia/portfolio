@@ -1,18 +1,9 @@
-import { motion } from "framer-motion";
 import { importAll } from "../../util/util";
 
-require.context(
-  "../../public/assets/pixelart",
-  false,
-  /\.(png|jpe?g|svg|gif)$/
-);
+require.context("../../public/assets/3D", false, /\.(png|jpe?g|svg|gif)$/);
 
 const images = importAll(
-  require.context(
-    "../../public/assets/pixelart",
-    false,
-    /\.(png|jpe?g|svg|gif)$/
-  )
+  require.context("../../public/assets/3d", false, /\.(png|jpe?g|svg|gif)$/)
 );
 
 function ThreeD() {
@@ -23,9 +14,7 @@ function ThreeD() {
   return (
     <div>
       <div>
-        <motion.div animate={{ scale: 1.5 }}>
-          <h1 className="text-4xl font-bold p-5">3D</h1>
-        </motion.div>
+        <h1 className="text-4xl font-bold p-5">3D</h1>
       </div>
 
       {imageSRCs.map((imgSrc) => (

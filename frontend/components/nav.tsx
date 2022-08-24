@@ -26,14 +26,14 @@ function NavMenu() {
             >
               <li>
                 <a href="/portfolio/" className="btn-ghost  ">
-                  Graphic
+                  Design
                 </a>
               </li>
               <li>
                 <a href="/portfolio/3D">3D</a>
               </li>
               <li>
-                <a href="/portfolio/pixelart">Pixel Art</a>
+                <a href="/portfolio/logo">Logo</a>
               </li>
             </ul>
           </div>
