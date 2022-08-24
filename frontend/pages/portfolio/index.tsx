@@ -1,17 +1,14 @@
-import { motion } from "framer-motion";
 import Image from "next/image";
-const Cat1 = require("../../public/assets/illustration/cat_1.png");
-const Cat2 = require("../../public/assets/illustration/cat_2.png");
-const Banner = require("../../public/assets/illustration/banner_bonitocat.png");
+const Cat1 = require("../../public/assets/3D/Donut.png");
+const Cat2 = require("../../public/assets/3D/Donut.png");
+const Banner = require("../../public/assets/3D/Donut.png");
 
 function Portfolio() {
   return (
     <div>
       <div>
         {" "}
-        <motion.div animate={{ scale: 1.5 }}>
-          <h1 className="text-2xl font-bold">Work Portfolio</h1>
-        </motion.div>
+        <h1 className="text-2xl font-bold">Work Portfolio</h1>
       </div>
 
       <div className="grid grid-cols-2 gap-4">
@@ -21,9 +18,7 @@ function Portfolio() {
 
       <div className="card bordered grid grid-cols-1 gap-4">
         <figure>
-          <motion.div animate={{ scale: 1.5 }}>
-            <Image src={Banner} alt="cat picture" />
-          </motion.div>
+          <Image src={Banner} alt="cat picture" />
         </figure>
       </div>
 

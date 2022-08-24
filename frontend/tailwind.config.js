@@ -1,23 +1,22 @@
 module.exports = {
   content: [
-    './pages/**/*.{js,ts,jsx,tsx}',
-    './components/**/*.{js,ts,jsx,tsx}',
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
     extend: {},
   },
-  plugins: [require('daisyui'),],
+  plugins: [require("daisyui")],
   daisyui: {
-    
-
-  themes: [
-    {
-      graciatheme: { // custom theme
-        primary: "#e02b5b",
+    themes: [
+      {
+        graciatheme: {
+          // custom theme
+          primary: "#e02b5b",
           "primary-focus": "#f07fe8",
-          "primary-content": "#ffffff",
-          secondary: "#ffffff",
-          "secondary-focus": "#ffffff",
+          "primary-content": "#F2F2F2",
+          secondary: "#F2F2F2",
+          "secondary-focus": "#F2F2F2",
           "secondary-content": "#000000",
           accent: "#37cdbe",
           "accent-focus": "#2aa79b",
@@ -33,12 +32,11 @@ module.exports = {
           success: "#009485",
           warning: "#ff9900",
           error: "#ff5724",
+        },
       },
-      
-    },
-    'dark', // and some pre-defined theme
-    'forest',
-    'synthwave'
-  ],
-},
-}
+      "dark", // and some pre-defined theme
+      "lofi",
+      "cupcake",
+    ],
+  },
+};
