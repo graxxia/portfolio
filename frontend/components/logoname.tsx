@@ -1,5 +1,5 @@
-/* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
+
 export function LogoName() {
   return (
     <div className="pt-4 	">
