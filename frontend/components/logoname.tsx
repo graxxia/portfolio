@@ -1,15 +1,13 @@
+import Link from "next/link";
 function LogoName() {
   return (
-    <div className="flex mt-3 items-center justify-center  py-2">
-      <div className="flex-none pr-2">
-        {/* <div className="avatar">
+    <div className="pt-4 	">
+      <Link href="/" className="">
+        <a>
           {" "}
-          <img src="/heart.gif" />
-        </div> */}
-      </div>
-      <a href="/" className="text-xl tracking-widest ">
-        GRACIA MORALES
-      </a>
+          <img className="h-24 w-24" src="/GraciaLogo.svg" alt="logo" />
+        </a>
+      </Link>
     </div>
   );
 }

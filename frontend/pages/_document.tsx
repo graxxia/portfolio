@@ -1,6 +1,6 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import LogoName from "../components/logoname";
+import LogoName from "../components/LogoName";
 
 import Document, { Html, Head, Main, NextScript } from "next/document";
 
@@ -15,10 +15,7 @@ class MyDocument extends Document {
       <Html data-theme="graciatheme">
         <Head />
 
-        <body className="flex flex-col items-center justify-center w-full flex-1 px-8 text-center">
-          <div className="flex mt-3 items-center justify-center  py-1">
-            <div className="avatar">{/* <img src="/Heart.gif" /> */}</div>
-          </div>
+        <body className="flex flex-col items-center justify-center w-full flex-1 text-center">
           <LogoName />
           <Nav />
           <Main />
