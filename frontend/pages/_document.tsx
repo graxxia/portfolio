@@ -1,8 +1,6 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { LogoName } from "../components/LogoName";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {
@@ -16,7 +14,6 @@ class MyDocument extends Document {
         <Head />
 
         <body className="flex flex-col items-center justify-center w-full flex-1 text-center">
-          <LogoName />
           <Nav />
           <Main />
           <NextScript />
