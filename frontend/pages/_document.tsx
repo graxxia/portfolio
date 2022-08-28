@@ -1,6 +1,6 @@
 import Nav from "../components/nav";
 import Footer from "../components/footer";
-import LogoName from "../components/LogoName";
+import { LogoName } from "../components/LogoName";
 
 import Document, { Html, Head, Main, NextScript } from "next/document";
 

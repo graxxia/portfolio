@@ -1,6 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 import Link from "next/link";
-function LogoName() {
+export function LogoName() {
   return (
     <div className="pt-4 	">
       <Link href="/" className="">
@@ -12,5 +12,3 @@ function LogoName() {
     </div>
   );
 }
-
-export default LogoName;
