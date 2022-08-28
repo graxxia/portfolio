@@ -2,7 +2,7 @@ import Nav from "../components/nav";
 import Footer from "../components/footer";
 
 import Document, { Html, Head, Main, NextScript } from "next/document";
-import { LogoName } from "components/LogoName";
+import { LogoName } from "../components/LogoName";
 
 class MyDocument extends Document {
   static async getInitialProps(ctx) {

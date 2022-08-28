@@ -1,12 +1,12 @@
 import Link from "next/link";
+import { GRLogoCircle } from "./GrLogos";
 
 export function LogoName() {
   return (
     <div className="pt-4 	">
       <Link href="/" className="">
         <a>
-          {" "}
-          <img className="h-24 w-24" src="/GraciaLogo.svg" alt="logo" />
+          <GRLogoCircle className="h-32 w-32" />
         </a>
       </Link>
     </div>

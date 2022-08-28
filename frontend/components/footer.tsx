@@ -1,4 +1,5 @@
 import Link from "next/link";
+import { GLogo } from "./GrLogos";
 
 let date = new Date().getFullYear();
 
@@ -11,7 +12,7 @@ export default function Footer() {
             <h2 className="flex items-center text-xs font-semibold tracking-widest">
               PORTFOLIO
               <span className="inline-block ">
-                <img src="/Gracia.svg" alt="Gracia Logo" className="h-7 mx-1" />
+                <GLogo className="w-8 h-8" />
               </span>
               {/* <img src="/heart.gif" alt="crown" className="h-4 ml-2" /> */}
               {date}
