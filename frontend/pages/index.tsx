@@ -1,36 +1,166 @@
 import Image from "next/image";
-export const Bonita = require("../public/assets/img/bonita.png");
-const Emily = require("../public/assets/img/emily600px.png");
-const Colours = require("../public/assets/img/colours600px.png");
-const Cat = require("../public/assets/img/cat600px.png");
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <div className="flex flex-col items-center  ">
-      {/* <h1 className="text-3xl text-center pb-4">
+    <>
+      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 mb-5">
+        {/* <h1 className="text-3xl text-center pb-4">
         Welcome to my{" "}
         <a className="text-yellow-400 font-bold" href="/portfolio/">
           portfolio
         </a>
       </h1> */}
+        <div className="px-4 py-4 hover:bg-white">
+          <a className="cursor-pointer">
+            <Link href="/portfolio/3D">
+              <div className="card-normal ">
+                <Image
+                  src={"/assets/3D/porco/porco3.jpg"}
+                  alt="Donut"
+                  quality={100}
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </Link>
 
-      <div className="card-normal  bg-base-100 shadow-xl">
-        <figure className="px-10 pt-10">
-          <Image src={Bonita} alt="Bonita Logo" quality={100} />
-        </figure>
-        <div className="card-body items-center text-center">
-          <h4>DESIGN</h4>
+            <hr className=" border-black border-1 my-1 "></hr>
+
+            <p className="flex font-semibold text-xs text-left tracking-widest ">
+              3D
+              <span className="inline-block bg-secondary-focus px-1 ml-2">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  viewBox="0 0 20 20"
+                  fill="currentColor"
+                  className="w-4 h-4"
+                >
+                  <path
+                    fillRule="evenodd"
+                    d="M3.22 16.78a.75.75 0 001.06 0L15.5 5.56v7.69a.75.75 0 001.5 0v-9.5a.75.75 0 00-.75-.75h-9.5a.75.75 0 000 1.5h7.69L3.22 15.72a.75.75 0 000 1.06z"
+                    clipRule="evenodd"
+                  />
+                </svg>
+              </span>
+            </p>
+            <p className="flex text-xs text-left tracking-widest">
+              CHARACTER DESIGN
+            </p>
+            <p className="flex text-xs text-left tracking-widest">MODEL</p>
+          </a>
+        </div>
+        <div className="px-4 py-4 hover:bg-white">
+          <a className="cursor-pointer">
+            <Link href="/portfolio/3D">
+              <div className="card-normal">
+                <Image
+                  src={"/assets/img/emilyM.png"}
+                  alt="Emily Murphy Logo"
+                  quality={100}
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </Link>
+          </a>
+          <hr className=" border-black border-1 my-1 "></hr>
+
+          <p className="font-semibold text-xs text-left tracking-widest">
+            DIGITAL
+            <span className="inline-block bg-secondary-focus px-1 ml-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3.22 16.78a.75.75 0 001.06 0L15.5 5.56v7.69a.75.75 0 001.5 0v-9.5a.75.75 0 00-.75-.75h-9.5a.75.75 0 000 1.5h7.69L3.22 15.72a.75.75 0 000 1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </span>
+          </p>
+          <p className="flex text-xs text-left tracking-widest">CONCEPTION</p>
+          <p className="flex text-xs text-left tracking-widest">
+            COMMUNICATION
+          </p>
+        </div>
+        <div className="px-4 py-4 hover:bg-white">
+          <a className="cursor-pointer">
+            <Link href="/portfolio/3D">
+              <div className="card-normal">
+                <Image
+                  src={"/assets/img/colours.png"}
+                  alt="Colours Logo"
+                  quality={100}
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </Link>
+          </a>
+          <hr className=" border-black border-1 my-1 "></hr>
+
+          <p className="font-semibold text-xs text-left tracking-widests tracking-widest">
+            GRAPHIC DESIGN
+            <span className="inline-block bg-secondary-focus px-1 ml-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3.22 16.78a.75.75 0 001.06 0L15.5 5.56v7.69a.75.75 0 001.5 0v-9.5a.75.75 0 00-.75-.75h-9.5a.75.75 0 000 1.5h7.69L3.22 15.72a.75.75 0 000 1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </span>
+          </p>
+          <p className="flex text-xs text-left tracking-widest">PLANNING</p>
+          <p className="flex text-xs text-left tracking-widest">CREATE</p>
+        </div>
+        <div className="px-4 py-4 hover:bg-white">
+          <a className="cursor-pointer">
+            <Link href="/portfolio/3D">
+              <div className="card-normal ">
+                <Image
+                  src={"/assets/img/bonita.png"}
+                  alt="Cat Illustration"
+                  quality={100}
+                  width={500}
+                  height={500}
+                />
+              </div>
+            </Link>
+          </a>
+          <hr className=" border-black border-1 my-1 "></hr>
+
+          <p className="font-semibold text-xs text-left tracking-widests tracking-widest">
+            PRINT
+            <span className="inline-block bg-secondary-focus px-1 ml-2">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 20 20"
+                fill="currentColor"
+                className="w-4 h-4"
+              >
+                <path
+                  fillRule="evenodd"
+                  d="M3.22 16.78a.75.75 0 001.06 0L15.5 5.56v7.69a.75.75 0 001.5 0v-9.5a.75.75 0 00-.75-.75h-9.5a.75.75 0 000 1.5h7.69L3.22 15.72a.75.75 0 000 1.06z"
+                  clipRule="evenodd"
+                />
+              </svg>
+            </span>
+          </p>
+          <p className="flex text-xs text-left tracking-widest">OBJECTIVES</p>
+          <p className="flex text-xs text-left tracking-widest">DESIGN</p>
         </div>
       </div>
-      <div className="">
-        <Image src={Emily} alt="Emily Murphy Logo" quality={100} />
-      </div>
-      <div className="">
-        <Image src={Colours} alt="Colours Logo" quality={100} />
-      </div>
-      <div className="">
-        <Image src={Cat} alt="Cat Illustration" quality={100} />
-      </div>
-    </div>
+    </>
   );
 }
