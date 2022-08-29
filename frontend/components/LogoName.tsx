@@ -6,7 +6,7 @@ export function LogoName() {
     <div className="pt-4 	">
       <Link href="/" className="">
         <a>
-          <GRLogoCircle className="h-32 w-32" />
+          <GRLogoCircle className="h-28 w-28" />
         </a>
       </Link>
     </div>
