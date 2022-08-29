@@ -91,7 +91,7 @@ function ThreeD() {
             </p>
 
             <p className="flex text-xs text-left font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              PROYECT
+              PROJECT
             </p>
             <p className="text-xs font-normal text-left tracking-wide leading-6">
               Created a game model in low poly style. Simplified anatomy, used
@@ -154,7 +154,7 @@ function ThreeD() {
             </p>
 
             <p className="flex text-xs text-left font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              PROYECT
+              PROJECT
             </p>
             <p className="text-xs font-normal text-left tracking-wide leading-6">
               Low poly style model. Porco is designed as a villian character for
@@ -217,10 +217,10 @@ function ThreeD() {
             </p>
 
             <p className="flex text-xs text-left font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              PROYECT
+              PROJECT
             </p>
             <p className="text-xs font-normal text-left tracking-wide leading-6">
-              Fun YouTube tutorial proyect that convinced me to start the 3D
+              Fun YouTube tutorial project that convinced me to start the 3D
               model path
             </p>
           </div>
