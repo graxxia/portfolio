@@ -22,7 +22,7 @@ module.exports = {
       {
         graciatheme: {
           // custom theme
-          primary: "#facc15",
+          primary: "#0d9488",
           "primary-focus": "#fca5a5",
           "primary-content": "#99f6e4",
           secondary: "#F2F2F2",

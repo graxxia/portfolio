@@ -5,18 +5,21 @@ let date = new Date().getFullYear();
 
 export default function Footer() {
   return (
-    <footer className="flex items-center justify-center w-full h-24 border-t">
+    <footer className="flex items-center justify-center w-full h-36 border-t">
       <Link href="/">
         <a>
-          <div>
-            <h2 className="flex items-center text-xs font-semibold tracking-widest">
+          <div className="grid justify-items-center">
+            <h2 className="flex items-center text-xs font-semibold tracking-widest my-4">
               PORTFOLIO
               <span className="inline-block ">
                 <GLogo className="w-8 h-8" />
               </span>
-              {/* <img src="/heart.gif" alt="crown" className="h-4 ml-2" /> */}
               {date}
             </h2>
+            <p className="text-xs">
+              Welcome to my website, I created it using Vercel Next.js. Thank
+              you for your visit.
+            </p>
           </div>
         </a>
       </Link>

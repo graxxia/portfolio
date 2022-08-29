@@ -38,20 +38,20 @@ function NavMenu() {
               className={
                 pages.home
                   ? "btn font-black tracking-wider"
-                  : `btn btn-ghost text-xs hover:bg-primary-focus rounded-none tracking-wider `
+                  : `btn btn-ghost text-sm hover:bg-primary-focus rounded-none tracking-wider `
               }
             >
               PORTFOLIO
             </a>
           </Link>
           <Link href="/about">
-            <a className="btn btn-ghost text-xs hover:bg-primary-focus rounded-none tracking-wider">
+            <a className="btn btn-ghost text-sm hover:bg-primary-focus rounded-none tracking-wider">
               ABOUT
             </a>
           </Link>
 
           <Link href="/contact">
-            <a className="btn btn-ghost text-xs hover:bg-primary-focus rounded-none tracking-wider">
+            <a className="btn btn-ghost text-sm hover:bg-primary-focus rounded-none tracking-wider">
               CONTACT
             </a>
           </Link>
