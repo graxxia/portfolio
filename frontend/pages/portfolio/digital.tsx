@@ -176,8 +176,8 @@ function ThreeD() {
 
           <div className="avatar w-36 mb-5">
             <Image
-              src={"/assets/3d/donut.png"}
-              alt="Jade face"
+              src={"/assets/3D/donut.png"}
+              alt="Donut face"
               quality={100}
               width={672}
               height={672}

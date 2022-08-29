@@ -98,7 +98,7 @@ function ThreeD() {
               UVs and texture and adding some animations for use in Unity game
             </p>
           </div>
-          <div className="grid gap-6 my-20">
+          <div className="grid gap-6 my-14">
             {jadeImageSRCs.map((imgSrc, i) => (
               <Image
                 src={imagesJade[imgSrc].default.src}
@@ -161,7 +161,7 @@ function ThreeD() {
               a pirate game theme
             </p>
           </div>
-          <div className="grid gap-6 my-20">
+          <div className="grid gap-6 my-14">
             {porcoImageSRCs.map((imgSrc, i) => (
               <Image
                 src={imagesPorco[imgSrc].default.src}
@@ -176,8 +176,8 @@ function ThreeD() {
 
           <div className="avatar w-36 mb-5">
             <Image
-              src={"/assets/3d/donut.png"}
-              alt="Jade face"
+              src={"/assets/3D/donut.png"}
+              alt="Donut"
               quality={100}
               width={672}
               height={672}
@@ -224,7 +224,7 @@ function ThreeD() {
               model path
             </p>
           </div>
-          <div className="grid gap-6 my-20">
+          <div className="grid gap-6 my-14">
             {donutImageSRCs.map((imgSrc, i) => (
               <Image
                 src={imagesDonut[imgSrc].default.src}
