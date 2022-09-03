@@ -15,6 +15,7 @@ export default function Home() {
                   quality={100}
                   width={500}
                   height={500}
+                  className="shadow-lg"
                 />
               </div>
             </Link>
@@ -47,8 +48,8 @@ export default function Home() {
 
         <div className="px-4 py-4 hover:bg-white">
           <a className="cursor-pointer">
-            <Link href="/portfolio/3D">
-              <div className="card-normal">
+            <Link href="/portfolio/digital">
+              <div className="card-normal shadow-md">
                 <Image
                   src={"/assets/img/emilyM.png"}
                   alt="Emily Murphy Logo"
@@ -86,8 +87,8 @@ export default function Home() {
         </div>
         <div className="px-4 py-4 hover:bg-white">
           <a className="cursor-pointer">
-            <Link href="/portfolio/3D">
-              <div className="card-normal">
+            <Link href="/portfolio/graphic">
+              <div className="card-normal shadow-md">
                 <Image
                   src={"/assets/img/colours.png"}
                   alt="Colours Logo"
@@ -123,8 +124,8 @@ export default function Home() {
         </div>
         <div className="px-4 py-4 hover:bg-white">
           <a className="cursor-pointer">
-            <Link href="/portfolio/3D">
-              <div className="card-normal ">
+            <Link href="/portfolio/print">
+              <div className="card-normal shadow-md">
                 <Image
                   src={"/assets/img/bonita.png"}
                   alt="Cat Illustration"
