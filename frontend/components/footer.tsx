@@ -17,8 +17,8 @@ export default function Footer() {
               {date}
             </h2>
             <p className="text-xs">
-              Welcome to my website, I created it using Vercel Next.js. Thank
-              you for your visit.
+              Welcome to my website, I created it using Vercel Next.js. <br />
+              Thank you for your visit.
             </p>
           </div>
         </a>
