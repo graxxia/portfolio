@@ -13,14 +13,11 @@ function NavMenu() {
     console.log(asPath, "PATH");
   }
 
-  console.log(1, router);
   useEffect(() => {
     if (Router.isReady) {
       const urlSearchParams = new URLSearchParams(window.location.search);
       const data = urlSearchParams.get("data") || "";
       setCurrentURL(data);
-      console.log("DATA");
-      console.log(data);
     }
   }, []);
 
