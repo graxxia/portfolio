@@ -7,7 +7,7 @@ function Print() {
       <div className="py-20 bg-gradient-to-r from-amber-100 to-blue-100 mb-10">
         <div className="avatar place-self-center w-30 h-30">
           <Image
-            src={"/assets/img/bonita0.JPG"}
+            src={"/assets/img/bonita0.jpg"}
             alt="Bonita Logo"
             quality={100}
             width={300}
