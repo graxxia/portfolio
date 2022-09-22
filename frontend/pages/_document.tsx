@@ -12,10 +12,9 @@ class MyDocument extends Document {
   render() {
     return (
       <Html data-theme="graciatheme">
-        <Head />
-
-        <body className="flex flex-col items-center justify-center w-full flex-1 text-center">
+        <body className="items-center justify-center w-full text-center">
           <LogoName />
+          <Head />
           <Nav />
           <Main />
           <NextScript />

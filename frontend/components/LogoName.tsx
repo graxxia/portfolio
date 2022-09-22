@@ -3,7 +3,7 @@ import { GRLogoCircle } from "./GrLogos";
 
 export function LogoName() {
   return (
-    <div className="pt-4 	">
+    <div className="grid place-items-center  place-self-center  mb-5 pt-8">
       <Link href="/" className="">
         <a>
           <GRLogoCircle className="h-28 w-28" />
