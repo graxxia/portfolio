@@ -35,13 +35,17 @@ module.exports = {
           "neutral-focus": "#2a2e37",
           "neutral-content": "#ffffff",
           "base-100": "#FFFFFF",
-          "base-200": "#f9fafb",
+          "base-200": "#f3f4f6",
           "base-300": "#d1d5db",
           "base-content": "#1f2937",
           info: "#2094f3",
           success: "#f87171",
           warning: "#ff9900",
           error: "#ff5724",
+          emilyGradient:
+            "box-decoration-slice bg-gradient-to-r from-teal-100 to-fuchsia-100 mb-10",
+          cammacGradient:
+            "bg-primary py-20 box-decoration-slice bg-gradient-to-r from-orange-200 to-emerald-200 mb-10",
         },
         fontFamily: {
           sans: ["Roboto", "sans-serif"],

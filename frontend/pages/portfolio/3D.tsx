@@ -44,200 +44,147 @@ function ThreeD() {
   );
 
   return (
-    <div className=" mb-5">
-      <h1 className="text-6xl font-bold pb-5">3D</h1>
-      <div className="container mx-auto max-w-2xl">
-        <div className="px-4 py-4 ">
-          <div className="avatar w-36 m-5">
-            <Image
-              src={"/assets/3D/jade.jpg"}
-              alt="Jade face"
-              quality={100}
-              width={672}
-              height={672}
-              className="rounded-full"
-            />
-          </div>
-
-          <hr className=" border-black border-1 my-1 "></hr>
-          <div className="">
-            <h2 className="font-semibold text-left leading-10">
-              <span className="inline-block bg-secondary-focus mr-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-4 h-4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-              GAME CHARACTER &quot;JADE&quot;
-            </h2>
-
-            <p className="flex text-xs text-left font-medium tracking-widest leading-6 ">
-              3D / CHARACTER DESIGN / MODEL / MAP / RIG
-            </p>
-
-            <p className="flex text-xs font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              TOOLS
-            </p>
-            <p className="text-xs font-normal text-left tracking-wide leading-6">
-              Autodesk Maya, Unity
-            </p>
-
-            <p className="flex text-xs text-left font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              PROJECT
-            </p>
-            <p className="text-xs font-normal text-left tracking-wide leading-6">
-              2022 / Created a game model in low poly style. Simplified anatomy,
-              used UVs and texture and adding some animations for use in Unity
-              game
-            </p>
-          </div>
-          <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 gap-4 py-4 ">
-            {jadeImageSRCs.map((imgSrc, i) => (
-              <Image
-                src={imagesJade[imgSrc].default.src}
-                key={`${imgSrc}-i`}
-                alt={imgSrc}
-                width={672}
-                height={672}
-                className=""
-              />
-            ))}
-          </div>
-
-          <div className="avatar w-36 m-5">
-            <Image
-              src={"/assets/3D/porco.jpg"}
-              alt="Porco face"
-              quality={100}
-              width={672}
-              height={672}
-              className="rounded-full"
-            />
-          </div>
-
-          <hr className=" border-black border-1 my-1 "></hr>
-          <div className="">
-            <h2 className="font-semibold text-left leading-10">
-              <span className="inline-block bg-secondary-focus mr-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-4 h-4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-              GAME CHARACTER &quot;PORCO&quot;
-            </h2>
-
-            <p className="flex text-xs text-left font-medium tracking-widest leading-6 ">
-              3D / CHARACTER DESIGN / MODEL / MAP / RIG
-            </p>
-
-            <p className="flex text-xs font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              TOOLS
-            </p>
-            <p className="text-xs font-normal text-left tracking-wide leading-6">
-              Autodesk Maya, Unity
-            </p>
-
-            <p className="flex text-xs text-left font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              PROJECT
-            </p>
-            <p className="text-xs font-normal text-left tracking-wide leading-6">
-              2022 / Low poly style model. Porco is designed as a villain
-              character for a pirate game theme
-            </p>
-          </div>
-          <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 gap-4 py-4 ">
-            {porcoImageSRCs.map((imgSrc, i) => (
-              <Image
-                src={imagesPorco[imgSrc].default.src}
-                key={`${imgSrc}-i`}
-                alt={imgSrc}
-                width={672}
-                height={672}
-                className=""
-              />
-            ))}
-          </div>
-
-          <div className="avatar w-36 m-5">
-            <Image
-              src={"/assets/3D/donut.png"}
-              alt="Donut"
-              quality={100}
-              width={672}
-              height={672}
-              className="rounded-full"
-            />
-          </div>
-
-          <hr className=" border-black border-1 my-1 "></hr>
-          <div className="">
-            <h2 className="font-semibold text-left leading-10">
-              <span className="inline-block bg-secondary-focus mr-1">
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  viewBox="0 0 20 20"
-                  fill="currentColor"
-                  className="w-4 h-4"
-                >
-                  <path
-                    fillRule="evenodd"
-                    d="M16.704 4.153a.75.75 0 01.143 1.052l-8 10.5a.75.75 0 01-1.127.075l-4.5-4.5a.75.75 0 011.06-1.06l3.894 3.893 7.48-9.817a.75.75 0 011.05-.143z"
-                    clipRule="evenodd"
-                  />
-                </svg>
-              </span>
-              &quot;THE DONUT&quot;
-            </h2>
-
-            <p className="flex text-xs text-left font-medium tracking-widest leading-6 ">
-              3D / MODEL
-            </p>
-
-            <p className="flex text-xs font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              TOOLS
-            </p>
-            <p className="text-xs font-normal text-left tracking-wide leading-6">
-              Blender
-            </p>
-
-            <p className="flex text-xs text-left font-medium tracking-widest leading-6 underline underline-offset-4 decoration-2 decoration-primary-focus">
-              PROJECT
-            </p>
-            <p className="text-xs font-normal text-left tracking-wide leading-6">
-              2021 / Fun YouTube tutorial project that convinced me to start the
-              3D model path
-            </p>
-          </div>
-          <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 gap-4 py-4 ">
-            {donutImageSRCs.map((imgSrc, i) => (
-              <Image
-                src={imagesDonut[imgSrc].default.src}
-                key={`${imgSrc}-i`}
-                alt={imgSrc}
-                width={672}
-                height={672}
-                className=""
-              />
-            ))}
-          </div>
+    <div className="grid mb-5 ">
+      <h1 className="text-6xl font-bold uppercase py-10">3D</h1>
+      <div className="py-20 bg-gradient-to-r from-teal-100 to-yellow-100 mb-10">
+        <div className="avatar place-self-center w-30 h-30">
+          <Image
+            src={"/assets/3D/jade.jpg"}
+            alt="Jade face"
+            quality={100}
+            width={300}
+            height={300}
+            className="rounded-full"
+          />
         </div>
+      </div>
+
+      <div className="justify-self-center max-w-md m-5">
+        <h2 className="text-3xl uppercase leading-10">
+          GAME CHARACTER &quot;JADE&quot;
+        </h2>
+
+        <p className="uppercase font-medium tracking-widest bg-gradient-to-r from-teal-100 to-yellow-100 my-5 py-2">
+          3D / CHARACTER DESIGN / MODEL / MAP / RIG
+        </p>
+
+        <p className="flex font-medium uppercase tracking-widest underline underline-offset-4 decoration-2 my-4">
+          TOOLS
+        </p>
+        <p className="text-left tracking-wide my-4">Autodesk Maya, Unity</p>
+
+        <p className="flex font-medium uppercase tracking-widest underline underline-offset-4 decoration-2 my-4">
+          PROJECT
+        </p>
+        <p className="text-left tracking-wide my-4">
+          2022 / Created a game model in low poly style. Simplified anatomy,
+          used UVs and texture and adding some animations for use in Unity game.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 gap-10 px-5 py-20 place-items-center  place-self-center ">
+        {jadeImageSRCs.map((imgSrc, i) => (
+          <Image
+            src={imagesJade[imgSrc].default.src}
+            key={`${imgSrc}-i`}
+            alt={imgSrc}
+            width={672}
+            height={672}
+            className=""
+          />
+        ))}
+      </div>
+      <hr className=" border-black border-1 mb-28 " />
+      <div className="py-20 bg-gradient-to-r from-teal-100 to-fuchsia-100 mb-10">
+        <div className="avatar place-self-center w-30 h-30">
+          <Image
+            src={"/assets/3D/porco.jpg"}
+            alt="Porco face"
+            quality={100}
+            width={300}
+            height={300}
+            className="rounded-full"
+          />
+        </div>
+      </div>
+
+      <div className="justify-self-center max-w-md m-5">
+        <h2 className="text-3xl uppercase leading-10">
+          GAME CHARACTER &quot;PORCO&quot;
+        </h2>
+
+        <p className=" uppercase font-medium tracking-widest bg-gradient-to-r from-teal-100 to-fuchsia-100 my-5 py-2">
+          3D / CHARACTER DESIGN / MODEL / MAP / RIG
+        </p>
+
+        <p className="flex font-medium uppercase tracking-widest underline underline-offset-4 decoration-2 my-4">
+          TOOLS
+        </p>
+        <p className="text-left tracking-wide my-4">Autodesk Maya, Unity</p>
+
+        <p className="flex font-medium uppercase tracking-widest underline underline-offset-4 decoration-2 my-4">
+          PROJECT
+        </p>
+        <p className="text-left tracking-wide my-4">
+          2022 / Low poly style model. Porco is designed as a villain character
+          for a pirate game theme.
+        </p>
+      </div>
+      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 gap-10 px-5 py-20 place-items-center  place-self-center ">
+        {porcoImageSRCs.map((imgSrc, i) => (
+          <Image
+            src={imagesPorco[imgSrc].default.src}
+            key={`${imgSrc}-i`}
+            alt={imgSrc}
+            width={672}
+            height={672}
+            className=""
+          />
+        ))}
+      </div>
+      <hr className=" border-black border-1 mb-28 " />
+      <div className="py-20 bg-gradient-to-r from-cyan-100 to-rose-100 mb-10">
+        <div className="avatar place-self-center w-30 h-30">
+          <Image
+            src={"/assets/3D/donut.png"}
+            alt="Donut"
+            quality={100}
+            width={300}
+            height={300}
+            className="rounded-full"
+          />
+        </div>
+      </div>
+
+      <div className="justify-self-center max-w-md m-5">
+        <h2 className="text-3xl uppercase leading-10">&quot;THE DONUT&quot;</h2>
+
+        <p className="tuppercase font-medium tracking-widest bg-gradient-to-r from-cyan-100 to-rose-100 my-5 py-2">
+          3D / MODEL
+        </p>
+        <p className="flex font-medium uppercase tracking-widest underline underline-offset-4 decoration-2 my-4">
+          TOOLS
+        </p>
+        <p className="text-left tracking-wide my-4"> Blender</p>
+        <p className="flex font-medium uppercase tracking-widest underline underline-offset-4 decoration-2 my-4">
+          PROJECT
+        </p>
+        <p className="text-left tracking-wide my-4">
+          2021 / Fun YouTube tutorial project that convinced me to start the 3D
+          model path.
+        </p>
+      </div>
+
+      <div className="grid grid-cols-1 tablet:grid-cols-2 laptop:grid-cols-2 desktop:grid-cols-2 gap-10 px-5 py-20 place-items-center  place-self-center ">
+        {donutImageSRCs.map((imgSrc, i) => (
+          <Image
+            src={imagesDonut[imgSrc].default.src}
+            key={`${imgSrc}-i`}
+            alt={imgSrc}
+            width={672}
+            height={672}
+            className=""
+          />
+        ))}
       </div>
     </div>
   );

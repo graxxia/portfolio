@@ -7,10 +7,13 @@ import Head from "next/head";
 function MyApp({ Component, pageProps }) {
   return (
     <>
-      <Head>
-        <title>Gracia Morales</title>
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
+      <div className="">
+        <Head>
+          <title>Gracia Morales</title>
+
+          <link rel="icon" href="/favicon.ico" />
+        </Head>
+      </div>
       <Component {...pageProps} />
     </>
   );
