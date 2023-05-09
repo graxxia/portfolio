@@ -17,7 +17,7 @@ function MyApp({ Component, pageProps }) {
       router.events.off("routeChangeComplete", handleRouteChange);
     };
   }, [router.events]);
-
+  const googleAnalyticsKey = process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS;
   return (
     <>
       <Head>
@@ -37,7 +37,7 @@ function MyApp({ Component, pageProps }) {
       {/* Global Site Tag (gtag.js) - Google Analytics */}
       <Script
         strategy="afterInteractive"
-        src={`https://www.googletagmanager.com/gtag/js?id=${GA_TRACKING_ID}`}
+        src={`https://www.googletagmanager.com/gtag/js?id=${googleAnalyticsKey}`}
       />
       <Script
         id="google"
@@ -47,7 +47,7 @@ function MyApp({ Component, pageProps }) {
             window.dataLayer = window.dataLayer || [];
             function gtag(){dataLayer.push(arguments);}
             gtag('js', new Date());
-            gtag('config', '${process.env.NEXT_PUBLIC_GOOGLE_ANALYTICS}', {
+            gtag('config', '${googleAnalyticsKey}', {
               page_path: window.location.pathname,
             });
           `,
