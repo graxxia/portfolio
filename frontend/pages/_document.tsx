@@ -13,6 +13,7 @@ class MyDocument extends Document {
     return (
       <Html data-theme="graciatheme">
         <Head />
+
         <body className="items-center justify-center w-full text-center">
           <LogoName />
           <Nav />
