@@ -1,28 +1,19 @@
-import Link from "next/link";
-
-import Router, { useRouter } from "next/router";
 import { useEffect, useState } from "react";
 
-function NavMenu() {
-  const router = useRouter();
+import Link from "next/link";
+
+export const NavMenu = (router) => {
   const [currentURL, setCurrentURL] = useState("");
 
-  if (router) {
-    const { asPath } = router;
-
-    console.log(asPath, "PATH");
-  }
-
   useEffect(() => {
-    if (Router.isReady) {
+    if (router.isReady) {
       const urlSearchParams = new URLSearchParams(window.location.search);
       const data = urlSearchParams.get("data") || "";
       setCurrentURL(data);
     }
-  }, []);
+  }, [router]);
 
   const pages = {
-    // home: "https://www.gracia.works/" === currentURL,
     home: "http://localhost:3000/" === currentURL,
   };
 
@@ -56,9 +47,6 @@ function NavMenu() {
       </div>
     </div>
   );
-}
-NavMenu.getInitialProps = async ({ pathname }) => {
-  console.log(pathname, "ctx");
-  return { url: pathname };
 };
+
 export default NavMenu;
